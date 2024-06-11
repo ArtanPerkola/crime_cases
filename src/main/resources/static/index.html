@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Cases</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Crime Cases</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="defendants-tab" data-toggle="tab" href="#defendants" role="tab" aria-controls="defendants" aria-selected="true">Defendants</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="crimes-tab" data-toggle="tab" href="#crimes" role="tab" aria-controls="crimes" aria-selected="false">Crimes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="indictments-tab" data-toggle="tab" href="#indictments" role="tab" aria-controls="indictments" aria-selected="false">Indictments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="singles-tab" data-toggle="tab" href="#singles" role="tab" aria-controls="singles" aria-selected="false">Singles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="multiples-tab" data-toggle="tab" href="#multiples" role="tab" aria-controls="multiples" aria-selected="false">Multiples</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="defendants" role="tabpanel" aria-labelledby="defendants-tab">
+                <h2>Defendants</h2>
+                <ul id="defendants-list" class="list-group"></ul>
+            </div>
+            <div class="tab-pane fade" id="crimes" role="tabpanel" aria-labelledby="crimes-tab">
+                <h2>Crimes</h2>
+                <ul id="crimes-list" class="list-group"></ul>
+            </div>
+            <div class="tab-pane fade" id="indictments" role="tabpanel" aria-labelledby="indictments-tab">
+                <h2>Indictments</h2>
+                <ul id="indictments-list" class="list-group"></ul>
+            </div>
+            <div class="tab-pane fade" id="singles" role="tabpanel" aria-labelledby="singles-tab">
+                <h2>Singles</h2>
+                <ul id="singles-list" class="list-group"></ul>
+            </div>
+            <div class="tab-pane fade" id="multiples" role="tabpanel" aria-labelledby="multiples-tab">
+                <h2>Multiples</h2>
+                <ul id="multiples-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

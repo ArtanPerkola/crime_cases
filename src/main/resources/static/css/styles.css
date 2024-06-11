@@ -1,0 +1,11 @@
+body {
+    padding-top: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
